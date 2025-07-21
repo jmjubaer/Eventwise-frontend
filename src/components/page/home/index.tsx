@@ -1,11 +1,11 @@
 import Banner from "./Banner";
-import EventSection from "./Event";
+import EventSection from "./event";
 
 const HomePage = () => {
     return (
         <div className="">
             <Banner />
-            <EventSection/>
+            <EventSection />
         </div>
     );
 };

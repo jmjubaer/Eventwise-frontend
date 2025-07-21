@@ -1,8 +1,11 @@
 import { Tabs } from "antd";
 import type { TabsProps } from "antd";
-import { FaPlus, FaRegCalendar } from "react-icons/fa6";
+import { FaRegCalendar } from "react-icons/fa6";
 import { IoStatsChart } from "react-icons/io5";
 import { LuArchive } from "react-icons/lu";
+import EventTab from "./EventTab";
+import ArchivedTab from "./ArchivedTab";
+import StatsTab from "./StatsTab";
 
 const EventSection = () => {
     const onChange = (key: string) => {
@@ -17,17 +20,17 @@ const EventSection = () => {
                     <FaRegCalendar /> Events
                 </button>
             ),
-            children: "Content of Tab Pane 1",
+            children: <EventTab />,
         },
-        {
-            key: "2",
-            label: (
-                <button className='flex items-center gap-2 bg-white py-1.5 px-5 rounded-xl text-sm'>
-                    <FaPlus /> Create
-                </button>
-            ),
-            children: "Content of Tab Pane 2",
-        },
+        // {
+        //     key: "2",
+        //     label: (
+        //         <button className='flex items-center gap-2 bg-white py-1.5 px-5 rounded-xl text-sm'>
+        //             <FaPlus /> Create
+        //         </button>
+        //     ),
+        //     children: "Content of Tab Pane 2",
+        // },
         {
             key: "3",
             label: (
@@ -35,7 +38,7 @@ const EventSection = () => {
                     <LuArchive /> Archive
                 </button>
             ),
-            children: "Content of Tab Pane 3",
+            children: <ArchivedTab />,
         },
         {
             key: "4",
@@ -44,7 +47,7 @@ const EventSection = () => {
                     <IoStatsChart /> Stats
                 </button>
             ),
-            children: "Content of Tab Pane 3",
+            children: <StatsTab />,
         },
     ];
 
