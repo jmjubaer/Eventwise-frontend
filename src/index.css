@@ -1,14 +1,12 @@
 @import "tailwindcss";
-/* @theme {
-  extend: {
-    colors: {
-      primary: '#2563EB',
-      secondary: '#10B981',
-    }
-  }
-} */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@theme inline {
+    --color-primary: #2563eb;
+    --color-secondary: #10b981;
+    --color-personal: #f97415;
+    --color-work: #00a1d6;
+    --color-other: #7f33cc;
+}
 
 body {
     font-family: "Roboto", sans-serif;
